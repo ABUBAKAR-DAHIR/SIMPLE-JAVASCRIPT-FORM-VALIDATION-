@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+     <link rel="icon" href="/images/img1.jpg" type="x-icon/image">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="container-input-group" action="result.html" method="get">
+        <!-- title -->
+         <div class="title">
+            <h2>create account</h2>
+         </div>
+        <!-- username -->
+        <div class="input-group">
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name">
+            <p>Error Messege</p>
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+        </div>
+
+        <!-- email -->
+        <div class="input-group">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <p>Error Messege</p>
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+        </div>
+
+        <!-- phone number -->
+        <div class="input-group">
+            <label for="phoneNumber">phone Number</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number">
+            <p>Error Messege</p>
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+        </div>
+
+        <!-- password -->
+        <div class="input-group">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <p>Error Messege</p>
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+        </div>
+
+        <!-- confirm password -->
+        <div class="input-group">
+            <label for="confirmPassword">confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password">
+            <p>Error Messege</p>
+            <i class="fa-solid fa-check-circle"></i>
+            <i class="fa-solid fa-exclamation-circle"></i>
+        </div>
+
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+<!-- js -->
+<script src="app.js"></script>
+</html>

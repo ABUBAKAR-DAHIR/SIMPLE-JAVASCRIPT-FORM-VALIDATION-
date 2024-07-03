@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+body{
+    background: url(/images/img3.jpg) center center/ cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+#container-input-group{
+    background-color: white;
+    padding: 20px ;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px grey;
+    height: 60%;
+    
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.input-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group label{
+    text-transform: uppercase;
+    display: block;
+}
+.input-group input{
+    width: 93%;
+    padding: 13px;
+    margin: 5px auto;
+    outline: none;
+    font-size: 1.1rem;
+    display: block;
+}
+button{
+    border: none;
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: .5s;
+    border: 3px solid black;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+button:hover::before{
+    transform: scaleX(1);
+    color: black;
+}
+button:hover{
+    color: black;
+}
+
+i{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    display: none;
+}
+
+i.fa-check-circle{
+    color: green;
+    display: none;
+}
+i.fa-exclamation-circle{
+    color: red;
+    display: none;
+}
+
+p{
+    color: red;
+    font-size: .9rem;
+    display: none;
+    transition: 1s;
+}
+
+
+
+/* Javascript */
+
+/* error */
+.error input{
+    border: red solid;
+    outline: none;
+    border-radius: 5px;
+}
+
+.error i.fa-exclamation-circle
+{
+    display: block;
+}
+.error p{
+    display: block;
+}
+
+/* succes */
+
+.success input{
+    border: green solid;
+    border-radius: 5px;
+}
+.success i.fa-check-circle{
+    display: block;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 830px) {
+    body{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    #container-input-group{
+        min-height: 300px;
+        height: auto;
+        width: 70%;
+        margin: 0;
+        min-width: 300px;
+    }
+
+}
